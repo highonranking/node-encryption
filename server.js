@@ -14,8 +14,8 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Default configuration (can be overridden via environment variables)
 const DEFAULT_CONFIG = {
-  partnerId: process.env.PARTNER_ID || "aguHfIt46EsbBmU92adIG/+IfdU=",
-  partnerKey: process.env.PARTNER_KEY || "NjE3NDZjMGM2ZWQ0MzdiOGI0ZWJlODk1OWJlYjcxYzY="
+  partnerId: process.env.PARTNER_ID || "",
+  partnerKey: process.env.PARTNER_KEY || ""
 };
 
 // API endpoint to generate signature
