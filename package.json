@@ -1,15 +1,11 @@
 {
-  "name": "crypto-signature-generator",
+  "name": "node-project",
   "version": "1.0.0",
-  "description": "A Node.js project with React UI for generating MD5 signatures",
+  "description": "A Node.js project for generating MD5 signatures (Backend Only)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon server.js",
-    "client": "npm start",
-    "build": "npm run build",
-    "install-client": "npm install"
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -18,10 +14,9 @@
     "body-parser": "^1.20.2"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
-    "concurrently": "^8.2.0"
+    "nodemon": "^3.0.1" 
   },
-  "keywords": ["crypto", "md5", "signature", "react", "node"],
+  "keywords": ["crypto", "md5", "signature", "node"],
   "author": "Your Name",
   "license": "MIT"
 }
